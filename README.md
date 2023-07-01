@@ -30,10 +30,12 @@ To set up and run the project on Minikube, follow the steps below:
 
    - For `auth-service`:
      ```
-     docker build -t ethical/auth-api ./auth
+     cd auth-service
+     docker build -t ethical/auth-api .
      ```
    - For `hello-service`:
      ```
+     cd hello-service
      docker build -t ethical/hello-api ./hello
      ```
    - For `dummy-service`:
