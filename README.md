@@ -36,11 +36,12 @@ To set up and run the project on Minikube, follow the steps below:
    - For `hello-service`:
      ```
      cd hello-service
-     docker build -t ethical/hello-api ./hello
+     docker build -t ethical/hello-api .
      ```
    - For `dummy-service`:
      ```
-     docker build -t ethical/dummy-api ./dummy
+     cd dummy-service
+     docker build -t ethical/dummy-api .
      ```
 
 4. Apply the Kubernetes manifest to create the services, deployments, and ingress by running the following command:
